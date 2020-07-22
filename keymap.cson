@@ -1,0 +1,5 @@
+'atom-text-editor:not([mini])':
+  'alt-enter': 'hydrogen:run-all-above'
+  'alt-enter': 'hydrogen:run-all-above'
+  'alt-enter': 'hydrogen:run-all-above'
+  'alt-k': 'hydrogen:shutdown-kernel'
