@@ -38,8 +38,6 @@
     types: {}
     use_defaults: true
   editor:
-    fontSize: 18
-    softWrap: true
     tabType: "soft"
   "exception-reporting":
     userId: "240f309c-fea9-47c5-86d6-29b068d3732e"
@@ -52,5 +50,11 @@
     showPanel: true
   "python-autopep8":
     formatOnSave: true
+  "symbols-navigator":
+    clickType: "Single Click"
+    collapsedByDefault: true
+    position: "Right"
+    showOnStatusBar: true
+    sortBy: "Source Row"
   welcome:
     showOnStartup: false
