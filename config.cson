@@ -33,6 +33,7 @@
       "one-dark-ui"
       "wombat-dark-syntax"
     ]
+    useTreeSitterParsers: false
   "docblock-python":
     style: "google"
     types: {}
@@ -48,7 +49,6 @@
     withPep8: true
   "linter-ui-default":
     panelHeight: 350
-    showPanel: true
   "python-autopep8":
     formatOnSave: true
   "symbols-navigator":
