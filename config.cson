@@ -1,7 +1,18 @@
 "*":
+  Hydrogen:
+    startDir: "dirOfFile"
+    wrapOutput: true
   "atom-ide-terminal":
-    toggles:
-      autoClose: true
+    ansiColors:
+      normal:
+        blue: "#4f4fed"
+        red: "#f56060"
+      zBright:
+        brightBlue: "#5d5dee"
+        brightRed: "#fc5f5f"
+    core:
+      workingDirectory: "Active File"
+    style: {}
   "atom-package-deps":
     ignored: [
       "linter"
@@ -20,15 +31,21 @@
     telemetryConsent: "no"
     themes: [
       "one-dark-ui"
-      "dark-syntax"
+      "wombat-dark-syntax"
+    ]
+  "docblock-python":
+    style: "google"
     ]
   "docblock-python":
     style: "google"
     types: {}
     use_defaults: true
   editor:
-    fontSize: 18
-    softWrap: true
+    fontSize: 17
+    tabType: "soft"
+  "exception-reporting":
+    userId: "240f309c-fea9-47c5-86d6-29b068d3732e"
+  "linter-pylama":
     tabType: "soft"
   "exception-reporting":
     userId: "240f309c-fea9-47c5-86d6-29b068d3732e"
@@ -41,5 +58,11 @@
     showPanel: true
   "python-autopep8":
     formatOnSave: true
+  "symbols-navigator":
+    clickType: "Single Click"
+    collapsedByDefault: true
+    position: "Right"
+    showOnStatusBar: true
+    sortBy: "Source Row"
   welcome:
     showOnStartup: false
