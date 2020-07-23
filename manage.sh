@@ -69,7 +69,10 @@ echo $MESSAGE
 if [[ $LOAD == true ]]; then
   echo "Loading from remote ..."
   git pull
-  apm install --packages-file ~/.atom/package.list
+  apm list --installed --bare > ~/.atom/curr_package.list
+  diff -u ~/.atom/curr_package.list ~/.atom/package.list | grep "^+[^+]" | \
+    sed -e"s/^+//" > ~/.atom/new_package.list
+  apm install --packages-file ~/.atom/new_package.list
 fi
 if [[ $SAVE == true ]]; then
   echo "Saving to remote ..."
