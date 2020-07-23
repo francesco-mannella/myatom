@@ -35,17 +35,10 @@
     ]
   "docblock-python":
     style: "google"
-    ]
-  "docblock-python":
-    style: "google"
     types: {}
     use_defaults: true
   editor:
     fontSize: 17
-    tabType: "soft"
-  "exception-reporting":
-    userId: "240f309c-fea9-47c5-86d6-29b068d3732e"
-  "linter-pylama":
     tabType: "soft"
   "exception-reporting":
     userId: "240f309c-fea9-47c5-86d6-29b068d3732e"
