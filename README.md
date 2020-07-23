@@ -2,7 +2,7 @@
 
 A configuration including hydrogen, linter and autocomplete features.
 
-[screenshot](screenshot.png)
+<img src="screenshot.png" width="100%" />
 
 ### Install
     
