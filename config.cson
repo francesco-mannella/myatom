@@ -27,7 +27,9 @@
   autosave:
     enabled: true
   core:
-    restorePreviousWindowsOnStart: "no"
+    disabledPackages: [
+      "linter-ui-default"
+    ]
     telemetryConsent: "no"
     themes: [
       "one-dark-ui"
@@ -39,7 +41,7 @@
     types: {}
     use_defaults: true
   editor:
-    fontSize: 17
+    fontSize: 16
     tabType: "soft"
   "exception-reporting":
     userId: "240f309c-fea9-47c5-86d6-29b068d3732e"
