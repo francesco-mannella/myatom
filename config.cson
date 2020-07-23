@@ -26,6 +26,8 @@
     useSnippets: "required"
   autosave:
     enabled: true
+  "autosave-plus":
+    enabled: true
   core:
     disabledPackages: [
       "linter-ui-default"
@@ -41,7 +43,6 @@
     types: {}
     use_defaults: true
   editor:
-    fontSize: 16
     tabType: "soft"
   "exception-reporting":
     userId: "240f309c-fea9-47c5-86d6-29b068d3732e"
