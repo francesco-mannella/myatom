@@ -35,8 +35,8 @@
     ]
     telemetryConsent: "no"
     themes: [
-      "one-dark-ui"
-      "wombat-dark-syntax"
+      "love-light-ui"
+      "contrast-light-syntax"
     ]
     useTreeSitterParsers: false
   "docblock-python":
