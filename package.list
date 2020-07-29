@@ -22,6 +22,7 @@ linter-pylama@0.10.1
 linter-python@3.1.2
 linter-ui-default@1.8.1
 linter-ui-plus@0.3.2
+markdown-preview-plus@4.5.0
 minima-ui@0.0.4
 pacific-dark@0.5.0
 python-autopep8@0.1.3
