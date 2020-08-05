@@ -1,3 +1,63 @@
 atom-pane {
-    font-size: 18px;
+    font-size: 16px;
+}
+.cursor-base () {
+  border: none;
+  background: none;
+  opacity: 0.5;
+}
+
+.underline-cursor(@bottom-width: 0.2em) {
+  .cursor-base();
+  border-bottom-width: @bottom-width;
+  border-bottom-style: solid;
+  border-bottom-color: @syntax-cursor-color;
+}
+
+atom-text-editor.vim-mode-plus.normal-mode,
+atom-text-editor.vim-mode-plus.visual-mode,
+atom-text-editor.vim-mode-plus.operator-pending-mode,
+atom-text-editor.vim-mode-plus.insert-mode.replace {
+  &.is-focused,
+  &.vim-mode-plus-input-focused,
+  &.vim-mode-plus-search-input-focused {
+    .cursor {
+      .cursor-base();
+      background-color: @syntax-cursor-color; // block-cursor
+    }
+  }
+  &.vim-mode-plus-input-focused.hide-cursor {
+    .cursor { opacity: 0; }
+    .cursors.blink-off .cursor { opacity: 0; }
+  }
+}
+
+atom-text-editor.vim-mode-plus.operator-pending-mode {
+  &.is-focused,
+  &.vim-mode-plus-search-input-focused {
+    .cursor { .underline-cursor(0.6em); }
+    .cursors.blink-off .cursor { opacity: 0; }
+  }
+}
+
+atom-text-editor.vim-mode-plus.insert-mode.replace {
+  &.is-focused {
+    .cursor {
+      .underline-cursor(0.3em);
+      opacity: 0.8;
+    }
+  }
+}
+
+// vim-mode-plus-input-focused for surround, f, F, t, T, r etc.
+atom-text-editor.vim-mode-plus.normal-mode,
+atom-text-editor.vim-mode-plus.visual-mode,
+atom-text-editor.vim-mode-plus.operator-pending-mode, {
+  &.vim-mode-plus-input-focused {
+    .cursor { .underline-cursor(); }
+  }
+}
+
+atom-text-editor.vim-mode-plus-input-char-waiting {
+  &.is-focused { .cursor { .underline-cursor(); } }
 }
