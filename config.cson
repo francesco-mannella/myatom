@@ -12,13 +12,13 @@
         brightRed: "#fc5f5f"
     core:
       workingDirectory: "Active File"
-    style:
-      theme: "inverse"
+    style: {}
   "atom-latex":
     clean_after_build: true
+    file_ext_to_clean: "*.aux, *.blg, *.idx, *.ind, *.lof, *.lot, *.out, *.toc, *.acn, *.acr, *.alg, *.glg, *.glo, *.gls, *.ist, *.fls, *.log, *.fdb_latexmk"
     hide_log_if_success: true
     latexmk_param: "-synctex=1 -interaction=nonstopmode -file-line-error -pdf -bibtex -f"
-    preview_after_build: "View in PDF viewer tab"
+    preview_after_build: "Do nothing"
     save_on_build: true
     toolchain: "latexmk toolchain"
   "atom-package-deps":
@@ -75,6 +75,7 @@
   "pdf-view":
     fitToWidthOnOpen: true
     paneToUseInSynctex: "down"
+    reverseSyncBehaviour: "Double click"
   "python-autopep8":
     formatOnSave: true
   "spell-check":
@@ -112,6 +113,18 @@
       "centroid"
       "dataset"
       "iteratively"
+      "matricial"
+      "activations"
+      "dimensionality"
+      "STM"
+      "RGB"
+      "MNIST"
+      "asian"
+      "latino"
+      "CFD"
+      "Labelings"
+      "Kohonen"
+      "Quantization"
     ]
   "symbols-navigator":
     clickType: "Single Click"
