@@ -3,3 +3,5 @@
   'alt-enter': 'hydrogen:run-all-above'
   'alt-enter': 'hydrogen:run-all-above'
   'alt-k': 'hydrogen:shutdown-kernel'
+'atom-text-editor[data-grammar="source python"]':
+  'ctrl-alt-m': 'python-autopep8:format'

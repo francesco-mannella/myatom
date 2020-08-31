@@ -32,10 +32,15 @@
   "autocomplete-clang": {}
   "autocomplete-latex-cite":
     includeGlobalBibFiles: true
+  "autocomplete-plus":
+    autoActivationDelay: 200
   "autocomplete-python":
+    enableTouchBar: true
+    useKite: false
     useSnippets: "required"
   autosave:
     enabled: true
+  "autosave-onchange": {}
   "autosave-plus":
     enabled: true
   core:
@@ -43,7 +48,9 @@
       "linter-ui-default"
       "markdown-preview"
     ]
-    packagesWithKeymapsDisabled: []
+    packagesWithKeymapsDisabled: [
+      "python-autopep8"
+    ]
     telemetryConsent: "no"
     themes: [
       "rzx-light-ui"
@@ -76,8 +83,7 @@
     fitToWidthOnOpen: true
     paneToUseInSynctex: "down"
     reverseSyncBehaviour: "Double click"
-  "python-autopep8":
-    formatOnSave: true
+  "python-autopep8": {}
   "spell-check":
     addKnownWords: true
     excludedScopes: [
