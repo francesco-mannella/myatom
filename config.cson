@@ -17,7 +17,7 @@
     clean_after_build: true
     file_ext_to_clean: "*.aux, *.blg, *.idx, *.ind, *.lof, *.lot, *.out, *.toc, *.acn, *.acr, *.alg, *.glg, *.glo, *.gls, *.ist, *.fls, *.log, *.fdb_latexmk"
     hide_log_if_success: true
-    latexmk_param: "-synctex=1 -interaction=nonstopmode -file-line-error -pdf -bibtex -f"
+    latexmk_param: "-synctex=1 -interaction=nonstopmode -file-line-error -pdf -bibtex"
     preview_after_build: "Do nothing"
     save_on_build: true
     toolchain: "latexmk toolchain"
@@ -55,7 +55,7 @@
     types: {}
     use_defaults: true
   editor:
-    fontSize: 16
+    fontSize: 13
     tabType: "soft"
   "ex-mode":
     gdefault: true
