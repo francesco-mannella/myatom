@@ -3,9 +3,9 @@
   'alt-enter': 'hydrogen:run-all-above'
   'alt-enter': 'hydrogen:run-all-above'
   'alt-k': 'hydrogen:shutdown-kernel'
-
+'atom-text-editor[data-grammar="source python"]':
+  'ctrl-alt-m': 'python-autopep8:format'
 '.platform-darwin atom-workspace':
   'ctrl-0': 'atom-ide-terminal:toggle'
-
 ' .platform-linux atom-workspace, .platform-win32 atom-workspace':
   'ctrl-0': 'atom-ide-terminal:toggle'
