@@ -62,7 +62,7 @@
     types: {}
     use_defaults: true
   editor:
-    fontSize: 13
+    fontSize: 17
     tabType: "soft"
   "ex-mode":
     gdefault: true
