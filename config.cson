@@ -46,7 +46,6 @@
   core:
     disabledPackages: [
       "markdown-preview"
-      "linter-ui-default"
     ]
     packagesWithKeymapsDisabled: [
       "python-autopep8"
@@ -73,12 +72,28 @@
     pylsPlugins:
       autopep8:
         enabled: false
-      flake8:
-        hangClosing: true
+      flake8: {}
+      jedi_completion:
+        enabled: false
+        include_params: false
       jedi_definition:
-        follow_imports: true
-      preload: {}
+        enabled: false
+      jedi_hover:
+        enabled: false
+      jedi_references:
+        enabled: false
+      jedi_signature_help:
+        enabled: false
+      jedi_symbols:
+        all_scopes: false
+        enabled: false
+      mccabe:
+        enabled: false
+      preload:
+        enabled: false
       pycodestyle:
+        enabled: false
+      pyflakes:
         enabled: false
   latex:
     opener: "evince"
@@ -91,15 +106,31 @@
     usePep257: false
     usePep8: false
   "linter-python":
-    withPep8: true
+    enableDebug: true
+    executablePath: "/home/fm/venv3/bin/pylama"
+    force: true
+    withMcCabe: true
+    withPyflakes: true
+    withPylint: true
   "linter-spell": {}
   "linter-ui-default":
+    hidePanelWhenEmpty: false
     panelHeight: 350
+    showPanel: true
+    showProviderName: true
+    statusBarRepresents: "Current File"
   "pdf-view":
     fitToWidthOnOpen: true
     paneToUseInSynctex: "down"
     reverseSyncBehaviour: "Double click"
   "python-autopep8": {}
+  "python-linters":
+    lintTrigger:
+      mypy: "Never"
+      pydocstyle: "Never"
+      pylint: "Never"
+    path:
+      python: "/home/fm/venv3"
   "spell-check":
     addKnownWords: true
     excludedScopes: [
