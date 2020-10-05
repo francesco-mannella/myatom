@@ -98,11 +98,18 @@
   latex:
     opener: "evince"
     outputDirectory: "pdf"
-  linter: {}
+  linter:
+    lintPreviewTabs: false
+  "linter-python":
+    enableDebug: true
+    executablePath: "pyla/usr/bin/pylama"
+    force: true
+    withPyflakes: true
   "linter-spell": {}
   "linter-ui-default":
     hidePanelWhenEmpty: false
     panelHeight: 350
+    showPanel: true
     showProviderName: true
     statusBarRepresents: "Current File"
   "pdf-view":
@@ -112,6 +119,7 @@
   "python-autopep8": {}
   "python-linters":
     lintTrigger:
+      flake8: "LintOnFileSave"
       mypy: "Never"
       pydocstyle: "Never"
       pylint: "Never"
