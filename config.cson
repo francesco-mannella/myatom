@@ -112,12 +112,10 @@
   "python-autopep8": {}
   "python-linters":
     lintTrigger:
-      flake8: "Never"
       mypy: "Never"
       pydocstyle: "Never"
-    path:
-      python: "%PROJECT_PATH/venv3/"
-      pythonExecutable: "%PROJECT_PATH/venv3/bin/python3"
+      pylint: "Never"
+    path: {}
   "spell-check":
     addKnownWords: true
     excludedScopes: [
