@@ -10,7 +10,6 @@ autocomplete-python@1.16.0
 autosave-onchange@1.5.1
 base16-papercolor-dark-syntax@1.0.0
 busy-signal@2.0.1
-chameleon-ui@2.0.0
 colorblind-wombat-dark-syntax@0.6.0
 contrast-light-syntax@0.3.0
 dark-one-dark-syntax@2.3.0
@@ -28,7 +27,6 @@ linter@3.1.1
 linter-pyflakes@0.3.2
 linter-ui-default@2.1.2
 markdown-preview-plus@4.7.1
-minima-ui@0.0.4
 pacific-dark@0.5.0
 pdf-view@0.72.0
 python-autopep8@0.1.3

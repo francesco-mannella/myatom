@@ -76,6 +76,7 @@
   "linter-spell": {}
   "linter-ui-default":
     panelHeight: 250
+    showPanel: true
     showProviderName: true
     statusBarRepresents: "Current File"
   "pdf-view":
