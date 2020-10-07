@@ -109,7 +109,6 @@
   "linter-ui-default":
     hidePanelWhenEmpty: false
     panelHeight: 350
-    showPanel: true
     showProviderName: true
     statusBarRepresents: "Current File"
   "pdf-view":
