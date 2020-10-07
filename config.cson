@@ -68,47 +68,14 @@
     gdefault: true
   "exception-reporting":
     userId: "240f309c-fea9-47c5-86d6-29b068d3732e"
-  "ide-python":
-    pylsPlugins:
-      autopep8:
-        enabled: false
-      flake8: {}
-      jedi_completion:
-        enabled: false
-        include_params: false
-      jedi_definition:
-        enabled: false
-      jedi_hover:
-        enabled: false
-      jedi_references:
-        enabled: false
-      jedi_signature_help:
-        enabled: false
-      jedi_symbols:
-        all_scopes: false
-        enabled: false
-      mccabe:
-        enabled: false
-      preload:
-        enabled: false
-      pycodestyle:
-        enabled: false
-      pyflakes:
-        enabled: false
   latex:
     opener: "evince"
     outputDirectory: "pdf"
   linter:
     lintPreviewTabs: false
-  "linter-python":
-    enableDebug: true
-    executablePath: "pyla/usr/bin/pylama"
-    force: true
-    withPyflakes: true
   "linter-spell": {}
   "linter-ui-default":
-    hidePanelWhenEmpty: false
-    panelHeight: 350
+    panelHeight: 250
     showProviderName: true
     statusBarRepresents: "Current File"
   "pdf-view":
@@ -116,13 +83,6 @@
     paneToUseInSynctex: "down"
     reverseSyncBehaviour: "Double click"
   "python-autopep8": {}
-  "python-linters":
-    lintTrigger:
-      flake8: "LintOnFileSave"
-      mypy: "Never"
-      pydocstyle: "Never"
-      pylint: "Never"
-    path: {}
   "spell-check":
     addKnownWords: true
     excludedScopes: [
