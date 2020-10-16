@@ -46,6 +46,8 @@
   core:
     disabledPackages: [
       "markdown-preview"
+      "linter-pyflakes"
+      "linter"
     ]
     packagesWithKeymapsDisabled: [
       "python-autopep8"
@@ -62,7 +64,7 @@
     types: {}
     use_defaults: true
   editor:
-    fontSize: 19
+    fontSize: 20
     tabType: "soft"
   "ex-mode":
     gdefault: true
