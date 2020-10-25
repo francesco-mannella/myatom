@@ -46,12 +46,11 @@
   core:
     disabledPackages: [
       "markdown-preview"
-      "linter-pyflakes"
-      "linter"
     ]
     packagesWithKeymapsDisabled: [
       "python-autopep8"
       "linter-pylama"
+      "run-in-terminal"
     ]
     telemetryConsent: "no"
     themes: [
@@ -64,7 +63,7 @@
     types: {}
     use_defaults: true
   editor:
-    fontSize: 20
+    fontSize: 21
     tabType: "soft"
   "ex-mode":
     gdefault: true
@@ -86,6 +85,9 @@
     paneToUseInSynctex: "down"
     reverseSyncBehaviour: "Double click"
   "python-autopep8": {}
+  "run-in-terminal":
+    launchdir: "gnome-terminal --working-directory=\"{working_directory}\""
+    launchfile: "gnome-terminal --working-directory=\"{working_directory}\" -e \"{file_path} {args}\""
   "spell-check":
     addKnownWords: true
     excludedScopes: [

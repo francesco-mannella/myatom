@@ -26,9 +26,6 @@ ide-python@1.5.0
 intentions@1.1.5
 language-latex@1.2.0
 latex-autocomplete@1.1.1
-linter@3.1.1
-linter-pyflakes@0.3.2
-linter-ui-default@2.1.2
 markdown-preview-plus@4.8.2
 pacific-dark@0.5.0
 pdf-view@0.72.0
@@ -36,6 +33,7 @@ python-autopep8@0.1.3
 python-debugger@0.2.0
 python-tools@0.6.9
 refactor@0.11.5
+run-in-terminal@1.0.1
 rzx-light-ui@1.1.1
 symbols-navigator@1.9.0
 wombat-dark-syntax@1.2.0
