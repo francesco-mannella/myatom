@@ -1,7 +1,6 @@
-Hydrogen@2.14.5
+Hydrogen@2.14.6
 atom-folding@0.0.9
 atom-ide-base@2.1.1
-atom-ide-terminal@5.0.1
 atom-ide-ui@0.13.0
 atom-latex@0.9.1
 atom-python-run@0.9.7
@@ -22,7 +21,7 @@ gentle-dark-ui@1.0.5
 hydrogen-cell-separator@0.4.1
 hydrogen-exectime@0.8.0
 hydrogen-python@0.0.8
-ide-python@1.5.0
+ide-python@1.5.1
 intentions@1.1.5
 language-latex@1.2.0
 latex-autocomplete@1.1.1
@@ -35,5 +34,7 @@ python-tools@0.6.9
 refactor@0.11.5
 run-in-terminal@1.0.1
 rzx-light-ui@1.1.1
+script-runner@2.6.0
 symbols-navigator@1.9.0
+terminal-tab@0.6.0
 wombat-dark-syntax@1.2.0

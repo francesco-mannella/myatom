@@ -13,6 +13,10 @@
     core:
       workingDirectory: "Active File"
     style: {}
+  "atom-ide-ui":
+    "atom-ide-terminal": {}
+    use:
+      "atom-ide-terminal": "never"
   "atom-latex":
     clean_after_build: true
     file_ext_to_clean: "*.aux, *.blg, *.idx, *.ind, *.lof, *.lot, *.out, *.toc, *.acn, *.acr, *.alg, *.glg, *.glo, *.gls, *.ist, *.fls, *.log, *.fdb_latexmk"
@@ -63,12 +67,30 @@
     types: {}
     use_defaults: true
   editor:
-    fontSize: 21
+    fontSize: 17
     tabType: "soft"
   "ex-mode":
     gdefault: true
   "exception-reporting":
     userId: "240f309c-fea9-47c5-86d6-29b068d3732e"
+  "ide-python":
+    pylsPlugins:
+      jedi_definition:
+        enabled: false
+      jedi_hover:
+        enabled: false
+      jedi_references:
+        enabled: false
+      jedi_signature_help:
+        enabled: false
+      jedi_symbols:
+        all_scopes: false
+        enabled: false
+      mccabe:
+        enabled: false
+      preload: {}
+      pycodestyle:
+        enabled: false
   latex:
     opener: "evince"
     outputDirectory: "pdf"
@@ -142,6 +164,9 @@
     position: "Right"
     showOnStatusBar: true
     sortBy: "Source Row"
+  "terminal-plus":
+    core:
+      mapTerminalsTo: "File"
   welcome:
     showOnStartup: false
 ".bibtex.text":
