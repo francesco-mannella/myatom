@@ -67,7 +67,7 @@
     types: {}
     use_defaults: true
   editor:
-    fontSize: 17
+    fontSize: 19
     tabType: "soft"
   "ex-mode":
     gdefault: true
@@ -157,6 +157,8 @@
       "Labelings"
       "Kohonen"
       "Quantization"
+      "proprioception"
+      "sensorimotor"
     ]
   "symbols-navigator":
     clickType: "Single Click"
@@ -167,6 +169,8 @@
   "terminal-plus":
     core:
       mapTerminalsTo: "File"
+  "terminal-tab":
+    matchTheme: false
   welcome:
     showOnStartup: false
 ".bibtex.text":
