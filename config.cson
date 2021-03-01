@@ -16,12 +16,19 @@
   "atom-ide-ui":
     "atom-ide-terminal": {}
     use:
+      "atom-ide-diagnostics": "never"
+      "atom-ide-diagnostics-ui": "never"
       "atom-ide-terminal": "never"
   "atom-latex":
+    build_after_save: false
     clean_after_build: true
     file_ext_to_clean: "*.aux, *.blg, *.idx, *.ind, *.lof, *.lot, *.out, *.toc, *.acn, *.acr, *.alg, *.glg, *.glo, *.gls, *.ist, *.fls, *.log, *.fdb_latexmk"
     hide_log_if_success: true
-    latexmk_param: "-synctex=1 -interaction=nonstopmode -file-line-error -pdf -bibtex"
+    latexmk_param: '''
+      -synctex=1 -interaction=nonstopmode -file-line-error -f -pdf -bibtex
+      
+      
+    '''
     preview_after_build: "Do nothing"
     save_on_build: true
     toolchain: "latexmk toolchain"
@@ -50,6 +57,7 @@
   core:
     disabledPackages: [
       "markdown-preview"
+      "intentions"
     ]
     packagesWithKeymapsDisabled: [
       "python-autopep8"
@@ -67,7 +75,8 @@
     types: {}
     use_defaults: true
   editor:
-    fontSize: 19
+    fontSize: 15
+    softWrap: true
     tabType: "soft"
   "ex-mode":
     gdefault: true
@@ -99,7 +108,6 @@
   "linter-spell": {}
   "linter-ui-default":
     panelHeight: 250
-    showPanel: true
     showProviderName: true
     statusBarRepresents: "Current File"
   "pdf-view":
@@ -159,6 +167,19 @@
       "Quantization"
       "proprioception"
       "sensorimotor"
+      "efference"
+      "attractor"
+      "proprioceptive"
+      "vicariate"
+      "somatosensory"
+      "rescalator"
+      "neurobiological"
+      "vibrissal"
+      "neurophysiological"
+      "protractions"
+      "motoneurons"
+      "rithmic"
+      "premotor"
     ]
   "symbols-navigator":
     clickType: "Single Click"
