@@ -74,11 +74,11 @@ if [[ $LOAD == true ]]; then
     sed -e"s/^+//" > ~/.atom/new_package.list
   diff -u ~/.atom/curr_package.list ~/.atom/package.list | grep "^-[^-]" | \
     sed -e"s/^-//" > ~/.atom/del_package.list
-  [[ -s ~/.atom/new_package.list ]] && apm install --packages-file ~/.atom/new_package.list
   [[ -s ~/.atom/del_package.list ]] && for f in $(cat ~/.atom/del_package.list); do 
         n=$(echo $f| sed -e"s/\@.*//") 
         apm uninstall $n; 
     done
+  [[ -s ~/.atom/new_package.list ]] && apm install --packages-file ~/.atom/new_package.list
 fi
 if [[ $SAVE == true ]]; then
   echo "Saving to remote ..."
