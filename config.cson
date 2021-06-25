@@ -14,10 +14,16 @@
       workingDirectory: "Active File"
     style: {}
   "atom-ide-ui":
+    "atom-ide-code-format":
+      formatOnSave: true
+      formatOnType: false
     "atom-ide-terminal": {}
     use:
+      "atom-ide-code-format": "never"
+      "atom-ide-datatip": "never"
       "atom-ide-terminal": "never"
   "atom-latex":
+    build_after_save: false
     clean_after_build: true
     file_ext_to_clean: "*.aux, *.blg, *.idx, *.ind, *.lof, *.lot, *.out, *.toc, *.acn, *.acr, *.alg, *.glg, *.glo, *.gls, *.ist, *.fls, *.log, *.fdb_latexmk"
     hide_log_if_success: true
@@ -31,6 +37,11 @@
     ]
   "atom-python-run":
     consoleLog: false
+    terminal: [
+      "qterminal"
+    ]
+  "atom-python-virtualenv":
+    additionalVirtualEnvPaths: "$HOME/venv3"
   autocomplete:
     includeCompletionsFromAllBuffers: true
   "autocomplete-clang": {}
@@ -58,8 +69,8 @@
     ]
     telemetryConsent: "no"
     themes: [
-      "rzx-light-ui"
-      "contrast-light-syntax"
+      "gentle-dark-ui"
+      "wombat-dark-syntax"
     ]
     useTreeSitterParsers: false
   "docblock-python":
@@ -67,7 +78,8 @@
     types: {}
     use_defaults: true
   editor:
-    fontSize: 17
+    fontSize: 20
+    softWrap: true
     tabType: "soft"
   "ex-mode":
     gdefault: true
@@ -75,6 +87,10 @@
     userId: "240f309c-fea9-47c5-86d6-29b068d3732e"
   "ide-python":
     pylsPlugins:
+      autopep8:
+        enabled: false
+      jedi_completion:
+        enabled: false
       jedi_definition:
         enabled: false
       jedi_hover:
@@ -91,6 +107,8 @@
       preload: {}
       pycodestyle:
         enabled: false
+  "ipython-run":
+    terminalToUse: "qterminal"
   latex:
     opener: "evince"
     outputDirectory: "pdf"
@@ -108,8 +126,8 @@
     reverseSyncBehaviour: "Double click"
   "python-autopep8": {}
   "run-in-terminal":
-    launchdir: "gnome-terminal --working-directory=\"{working_directory}\""
-    launchfile: "gnome-terminal --working-directory=\"{working_directory}\" -e \"{file_path} {args}\""
+    launchdir: "QT_SCALE_FACTOR=2 qterminal -w \"{working_directory}\""
+    launchfile: "QT_SCALE_FACTOR=2  qterminal -w \"{working_directory}\" -e \"{file_path} {args}\""
   "spell-check":
     addKnownWords: true
     excludedScopes: [
@@ -157,6 +175,8 @@
       "Labelings"
       "Kohonen"
       "Quantization"
+      "proprioceptive"
+      "somatosensory"
     ]
   "symbols-navigator":
     clickType: "Single Click"
@@ -167,8 +187,17 @@
   "terminal-plus":
     core:
       mapTerminalsTo: "File"
+  "terminal-tab":
+    matchTheme: false
   welcome:
     showOnStartup: false
 ".bibtex.text":
   editor:
     softWrap: true
+    softWrapAtPreferredLineLength: true
+".knitr.latex.tex.text":
+  editor:
+    preferredLineLength: 10000
+".python.source":
+  editor:
+    autoIndent: true
