@@ -19,15 +19,24 @@
       formatOnType: false
     "atom-ide-terminal": {}
     use:
+<<<<<<< HEAD
       "atom-ide-code-format": "never"
       "atom-ide-datatip": "never"
+=======
+      "atom-ide-diagnostics": "never"
+      "atom-ide-diagnostics-ui": "never"
+>>>>>>> 092a5e32166c3009d6dd93653f9633aed017006f
       "atom-ide-terminal": "never"
   "atom-latex":
     build_after_save: false
     clean_after_build: true
     file_ext_to_clean: "*.aux, *.blg, *.idx, *.ind, *.lof, *.lot, *.out, *.toc, *.acn, *.acr, *.alg, *.glg, *.glo, *.gls, *.ist, *.fls, *.log, *.fdb_latexmk"
     hide_log_if_success: true
-    latexmk_param: "-synctex=1 -interaction=nonstopmode -file-line-error -pdf -bibtex"
+    latexmk_param: '''
+      -synctex=1 -interaction=nonstopmode -file-line-error -f -pdf -bibtex
+      
+      
+    '''
     preview_after_build: "Do nothing"
     save_on_build: true
     toolchain: "latexmk toolchain"
@@ -61,7 +70,11 @@
   core:
     disabledPackages: [
       "markdown-preview"
+<<<<<<< HEAD
       "linter"
+=======
+      "intentions"
+>>>>>>> 092a5e32166c3009d6dd93653f9633aed017006f
     ]
     packagesWithKeymapsDisabled: [
       "python-autopep8"
@@ -79,7 +92,11 @@
     types: {}
     use_defaults: true
   editor:
+<<<<<<< HEAD
     fontSize: 21
+=======
+    fontSize: 15
+>>>>>>> 092a5e32166c3009d6dd93653f9633aed017006f
     softWrap: true
     tabType: "soft"
   "ex-mode":
@@ -118,7 +135,6 @@
   "linter-spell": {}
   "linter-ui-default":
     panelHeight: 250
-    showPanel: true
     showProviderName: true
     statusBarRepresents: "Current File"
   "pdf-view":
@@ -176,8 +192,26 @@
       "Labelings"
       "Kohonen"
       "Quantization"
+<<<<<<< HEAD
       "proprioceptive"
       "somatosensory"
+=======
+      "proprioception"
+      "sensorimotor"
+      "efference"
+      "attractor"
+      "proprioceptive"
+      "vicariate"
+      "somatosensory"
+      "rescalator"
+      "neurobiological"
+      "vibrissal"
+      "neurophysiological"
+      "protractions"
+      "motoneurons"
+      "rithmic"
+      "premotor"
+>>>>>>> 092a5e32166c3009d6dd93653f9633aed017006f
     ]
   "symbols-navigator":
     clickType: "Single Click"
