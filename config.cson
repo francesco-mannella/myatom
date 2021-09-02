@@ -1,238 +1,52 @@
 "*":
-  Hydrogen:
-    startDir: "dirOfFile"
-    wrapOutput: true
-  "atom-ide-terminal":
-    ansiColors:
-      normal:
-        blue: "#4f4fed"
-        red: "#f56060"
-      zBright:
-        brightBlue: "#5d5dee"
-        brightRed: "#fc5f5f"
-    core:
-      workingDirectory: "Active File"
-    style: {}
+  "atom-beautify":
+    bash: {}
+    general:
+      _analyticsUserId: "0d8609c0-06b0-4e33-a55a-fb773b21ba76"
+      showLoadingView: false
+  "atom-ide-outline":
+    foldInitially: true
+    initialDisplay: false
   "atom-ide-ui":
-    "atom-ide-code-format":
-      formatOnSave: true
-      formatOnType: false
-    "atom-ide-terminal": {}
     use:
-<<<<<<< HEAD
-      "atom-ide-code-format": "never"
-      "atom-ide-datatip": "never"
-=======
-      "atom-ide-diagnostics": "never"
       "atom-ide-diagnostics-ui": "never"
->>>>>>> 092a5e32166c3009d6dd93653f9633aed017006f
-      "atom-ide-terminal": "never"
   "atom-latex":
-    build_after_save: false
-    clean_after_build: true
-    file_ext_to_clean: "*.aux, *.blg, *.idx, *.ind, *.lof, *.lot, *.out, *.toc, *.acn, *.acr, *.alg, *.glg, *.glo, *.gls, *.ist, *.fls, *.log, *.fdb_latexmk"
-    hide_log_if_success: true
-    latexmk_param: '''
-      -synctex=1 -interaction=nonstopmode -file-line-error -f -pdf -bibtex
-      
-      
-    '''
-    preview_after_build: "Do nothing"
-    save_on_build: true
-    toolchain: "latexmk toolchain"
-  "atom-package-deps":
-    ignored: [
-      "linter"
-    ]
-  "atom-python-run":
-    consoleLog: false
-    terminal: [
-      "qterminal"
-    ]
-  "atom-python-virtualenv":
-    additionalVirtualEnvPaths: "$HOME/venv3"
-  autocomplete:
-    includeCompletionsFromAllBuffers: true
-  "autocomplete-clang": {}
-  "autocomplete-latex-cite":
-    includeGlobalBibFiles: true
-  "autocomplete-plus":
-    autoActivationDelay: 200
+    latexmk_param: "-synctex=1 -interaction=nonstopmode -file-line-error -bibtex -gg -pdf"
+  "atom-oss-license":
+    name: "Francesco Mannella"
+  "atom-python-run": {}
   "autocomplete-python":
-    enableTouchBar: true
     useKite: false
-    useSnippets: "required"
-  autosave:
-    enabled: true
-  "autosave-onchange": {}
-  "autosave-plus":
-    enabled: true
   core:
     disabledPackages: [
       "markdown-preview"
-<<<<<<< HEAD
-      "linter"
-=======
-      "intentions"
->>>>>>> 092a5e32166c3009d6dd93653f9633aed017006f
+      "ipython-run"
     ]
+    openEmptyEditorOnStart: false
     packagesWithKeymapsDisabled: [
-      "python-autopep8"
-      "linter-pylama"
-      "run-in-terminal"
+      "atom-beautify"
     ]
-    telemetryConsent: "no"
+    restorePreviousWindowsOnStart: "no"
+    telemetryConsent: "limited"
     themes: [
-      "gentle-dark-ui"
-      "wombat-dark-syntax"
+      "one-dark-ui"
+      "pacific-dark"
     ]
-    useTreeSitterParsers: false
-  "docblock-python":
-    style: "google"
-    types: {}
-    use_defaults: true
+  "dli-atom-beautify":
+    general:
+      beautifyEntireFileOnSave: false
   editor:
-<<<<<<< HEAD
-    fontSize: 21
-=======
     fontSize: 15
->>>>>>> 092a5e32166c3009d6dd93653f9633aed017006f
-    softWrap: true
-    tabType: "soft"
-  "ex-mode":
-    gdefault: true
   "exception-reporting":
-    userId: "240f309c-fea9-47c5-86d6-29b068d3732e"
-  "ide-python":
-    pylsPlugins:
-      autopep8:
-        enabled: false
-      jedi_completion:
-        enabled: false
-      jedi_definition:
-        enabled: false
-      jedi_hover:
-        enabled: false
-      jedi_references:
-        enabled: false
-      jedi_signature_help:
-        enabled: false
-      jedi_symbols:
-        all_scopes: false
-        enabled: false
-      mccabe:
-        enabled: false
-      preload: {}
-      pycodestyle:
-        enabled: false
+    userId: "a438f520-5744-4f6f-8d3c-09e82a4b7afd"
+  "gcc-make-run": {}
+  "gpp-compiler":
+    cppCompilerOptions: "-std=c++11"
   "ipython-run":
-    terminalToUse: "qterminal"
-  latex:
-    opener: "evince"
-    outputDirectory: "pdf"
-  linter:
-    lintPreviewTabs: false
-  "linter-spell": {}
+    focusOnTerminal: true
   "linter-ui-default":
-    panelHeight: 250
-    showProviderName: true
-    statusBarRepresents: "Current File"
-  "pdf-view":
-    fitToWidthOnOpen: true
-    paneToUseInSynctex: "down"
-    reverseSyncBehaviour: "Double click"
-  "python-autopep8": {}
-  "run-in-terminal":
-    launchdir: "QT_SCALE_FACTOR=2 qterminal -w \"{working_directory}\""
-    launchfile: "QT_SCALE_FACTOR=2  qterminal -w \"{working_directory}\" -e \"{file_path} {args}\""
-  "spell-check":
-    addKnownWords: true
-    excludedScopes: [
-      "support.function.tex"
-      "meta.preamble.latex"
-      "support.type.function.latex"
-      "comment.line.percentage.tex"
-      "storage.type.function.latex"
-      "support.function.latex"
-      "string.other.math.tex"
-      "string.other.math.block.environment.latex"
-      "variable.parameter.function.latex"
-      "constant.other.reference.latex"
-    ]
-    grammars: [
-      "source.asciidoc"
-      "source.gfm"
-      "text.git-commit"
-      "text.plain"
-      "text.plain.null-grammar"
-      "source.rst"
-      "text.restructuredtext"
-      "text.tex.latex"
-    ]
-    knownWords: [
-      "discretized"
-      "SOM"
-      "SOMs"
-      "STMs"
-      "variational"
-      "autoencoders"
-      "centroids"
-      "centroid"
-      "dataset"
-      "iteratively"
-      "matricial"
-      "activations"
-      "dimensionality"
-      "STM"
-      "RGB"
-      "MNIST"
-      "asian"
-      "latino"
-      "CFD"
-      "Labelings"
-      "Kohonen"
-      "Quantization"
-<<<<<<< HEAD
-      "proprioceptive"
-      "somatosensory"
-=======
-      "proprioception"
-      "sensorimotor"
-      "efference"
-      "attractor"
-      "proprioceptive"
-      "vicariate"
-      "somatosensory"
-      "rescalator"
-      "neurobiological"
-      "vibrissal"
-      "neurophysiological"
-      "protractions"
-      "motoneurons"
-      "rithmic"
-      "premotor"
->>>>>>> 092a5e32166c3009d6dd93653f9633aed017006f
-    ]
-  "symbols-navigator":
-    clickType: "Single Click"
-    collapsedByDefault: true
-    position: "Right"
-    showOnStatusBar: true
-    sortBy: "Source Row"
-  "terminal-plus":
-    core:
-      mapTerminalsTo: "File"
-  "terminal-tab":
-    matchTheme: false
+    panelHeight: 210
+  "python-tools":
+    pythonPath: "/home/fm/venv3/bin/"
   welcome:
     showOnStartup: false
-".bibtex.text":
-  editor:
-    softWrap: true
-    softWrapAtPreferredLineLength: true
-".knitr.latex.tex.text":
-  editor:
-    preferredLineLength: 10000
-".python.source":
-  editor:
-    autoIndent: true
