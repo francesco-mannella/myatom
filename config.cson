@@ -4,6 +4,9 @@
     general:
       _analyticsUserId: "0d8609c0-06b0-4e33-a55a-fb773b21ba76"
       showLoadingView: false
+    python:
+      default_beautifier: "black"
+      sort_imports: true
   "atom-ide-outline":
     foldInitially: true
     initialDisplay: false
@@ -23,9 +26,7 @@
       "ipython-run"
     ]
     openEmptyEditorOnStart: false
-    packagesWithKeymapsDisabled: [
-      "atom-beautify"
-    ]
+    packagesWithKeymapsDisabled: []
     restorePreviousWindowsOnStart: "no"
     telemetryConsent: "limited"
     themes: [
@@ -35,6 +36,9 @@
   "dli-atom-beautify":
     general:
       beautifyEntireFileOnSave: false
+    python:
+      default_beautifier: "black"
+      sort_imports: true
   editor:
     fontSize: 15
   "exception-reporting":
@@ -46,6 +50,7 @@
     focusOnTerminal: true
   "linter-ui-default":
     panelHeight: 210
+    showPanel: true
   "python-tools":
     pythonPath: "/home/fm/venv3/bin/"
   welcome:

@@ -1,4 +1,5 @@
 Hydrogen@2.16.3
+atom-beautify@0.33.4
 atom-folding@0.0.9
 atom-ide-base@3.4.0
 atom-ide-code-format@1.0.2
@@ -27,7 +28,6 @@ contrast-light-syntax@0.3.0
 dark-one-dark-syntax@2.3.0
 dark-syntax@0.0.2
 darker-one-dark-syntax@1.1.0
-dli-atom-beautify@0.33.5
 docblock-python@0.19.1
 gcc-make-run@0.2.12
 gentle-dark-ui@1.0.5
