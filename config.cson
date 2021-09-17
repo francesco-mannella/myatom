@@ -13,6 +13,7 @@
   "atom-ide-ui":
     use:
       "atom-ide-diagnostics-ui": "never"
+      "atom-ide-terminal": "never"
   "atom-latex":
     latexmk_param: "-synctex=1 -interaction=nonstopmode -file-line-error -bibtex -gg -pdf"
   "atom-oss-license":
@@ -49,8 +50,7 @@
   "ipython-run":
     focusOnTerminal: true
   "linter-ui-default":
-    panelHeight: 210
-    showPanel: true
+    panelHeight: 334
   "python-tools":
     pythonPath: "/home/fm/venv3/bin/"
   welcome:
