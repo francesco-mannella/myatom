@@ -4,3 +4,4 @@
   'ctrl-alt-b': 'atom-beautify:beautify-editor'
 'atom-text-editor[data-grammar="source python"]':
   'ctrl-alt-m': 'python-autopep8:format'
+  
