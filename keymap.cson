@@ -4,8 +4,3 @@
   'ctrl-alt-b': 'atom-beautify:beautify-editor'
 'atom-text-editor[data-grammar="source python"]':
   'ctrl-alt-m': 'python-autopep8:format'
-'.platform-darwin atom-workspace':
-  'ctrl-0': 'atom-ide-terminal:toggle'
-' .platform-linux atom-workspace, .platform-win32 atom-workspace':
-  'ctrl-0': 'atom-ide-terminal:toggle'
-  'ctrl-alt-r': 'run-in-terminal:editor-start-terminal-here-and-run'
