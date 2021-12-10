@@ -12,10 +12,14 @@
     initialDisplay: false
   "atom-ide-ui":
     use:
+      "atom-ide-datatip": "never"
+      "atom-ide-definitions": "never"
       "atom-ide-diagnostics-ui": "never"
+      "atom-ide-find-references": "never"
+      "atom-ide-outline-view": "never"
       "atom-ide-terminal": "never"
   "atom-latex":
-    latexmk_param: "-synctex=1 -interaction=nonstopmode -file-line-error -bibtex -gg -pdf"
+    latexmk_param: "-synctex=1 -interaction=nonstopmode --enable-write18 -file-line-error -bibtex -gg -pdf"
   "atom-oss-license":
     name: "Francesco Mannella"
   "atom-python-run": {}
@@ -24,15 +28,14 @@
   core:
     disabledPackages: [
       "markdown-preview"
-      "ipython-run"
     ]
     openEmptyEditorOnStart: false
     packagesWithKeymapsDisabled: []
     restorePreviousWindowsOnStart: "no"
     telemetryConsent: "limited"
     themes: [
-      "one-dark-ui"
-      "pacific-dark"
+      "rzx-light-ui"
+      "monokai-2"
     ]
   "dli-atom-beautify":
     general:
@@ -40,12 +43,35 @@
     python:
       default_beautifier: "black"
       sort_imports: true
-  editor: {}
+  editor:
+    fontSize: 20
   "exception-reporting":
     userId: "a438f520-5744-4f6f-8d3c-09e82a4b7afd"
   "gcc-make-run": {}
   "gpp-compiler":
     cppCompilerOptions: "-std=c++11"
+  "ide-python":
+    pylsPlugins:
+      flake8:
+        enabled: true
+      jedi_completion:
+        enabled: false
+        include_params: false
+      jedi_definition:
+        enabled: false
+      jedi_hover:
+        enabled: false
+      jedi_references:
+        enabled: false
+      jedi_signature_help:
+        enabled: false
+      jedi_symbols:
+        all_scopes: false
+        enabled: false
+      mccabe:
+        enabled: false
+      pyls_mypy:
+        enabled: false
   "ipython-run":
     focusOnTerminal: true
   "linter-ui-default":

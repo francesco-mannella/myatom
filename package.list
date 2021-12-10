@@ -4,7 +4,6 @@ atom-folding@0.0.9
 atom-ide-base@3.4.0
 atom-ide-code-format@1.0.2
 atom-ide-datatip@0.25.0
-atom-ide-debugger-python@0.7.3
 atom-ide-definitions@0.4.2
 atom-ide-hyperclick@1.0.11
 atom-ide-markdown-service@2.1.0
@@ -12,9 +11,8 @@ atom-ide-outline@3.2.0
 atom-ide-signature-help@0.16.0
 atom-ide-ui@0.13.0
 atom-latex@0.9.1
+atom-monokai@0.10.9
 atom-oss-license@1.1.2
-atom-python-run@0.9.7
-atom-python-virtualenv@1.0.4
 autocomplete@0.47.0
 autocomplete-clang@0.13.1
 autocomplete-latex-references@0.3.2
@@ -29,9 +27,7 @@ dark-one-dark-syntax@2.3.0
 dark-syntax@0.0.2
 darker-one-dark-syntax@1.1.0
 docblock-python@0.19.1
-gcc-make-run@0.2.12
 gentle-dark-ui@1.0.5
-gpp-compiler@3.0.7
 hydrogen-cell-separator@0.4.1
 hydrogen-exectime@0.8.0
 hydrogen-python@0.0.8
@@ -44,6 +40,8 @@ linter@3.4.0
 linter-gcc2@0.8.8
 linter-ui-default@3.4.1
 markdown-preview-plus@4.11.1
+monokai@0.28.0
+monokai-2@2.8.1
 pacific-dark@0.5.0
 pdf-view@0.73.0
 python-autopep8@0.1.3
