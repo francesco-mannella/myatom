@@ -40,8 +40,7 @@
     python:
       default_beautifier: "black"
       sort_imports: true
-  editor:
-    fontSize: 15
+  editor: {}
   "exception-reporting":
     userId: "a438f520-5744-4f6f-8d3c-09e82a4b7afd"
   "gcc-make-run": {}
