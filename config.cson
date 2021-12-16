@@ -24,6 +24,7 @@
     name: "Francesco Mannella"
   "atom-python-run": {}
   "autocomplete-python":
+    showDescriptions: false
     useKite: false
   core:
     disabledPackages: [
@@ -43,8 +44,7 @@
     python:
       default_beautifier: "black"
       sort_imports: true
-  editor:
-    fontSize: 20
+  editor: {}
   "exception-reporting":
     userId: "a438f520-5744-4f6f-8d3c-09e82a4b7afd"
   "gcc-make-run": {}
@@ -70,6 +70,7 @@
         enabled: false
       mccabe:
         enabled: false
+      pydocstyle: {}
       pyls_mypy:
         enabled: false
   "ipython-run":
