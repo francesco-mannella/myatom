@@ -52,10 +52,10 @@
     cppCompilerOptions: "-std=c++11"
   "ide-python":
     pylsPlugins:
+      autopep8: {}
       flake8:
         enabled: true
       jedi_completion:
-        enabled: false
         include_params: false
       jedi_definition:
         enabled: false
@@ -70,9 +70,14 @@
         enabled: false
       mccabe:
         enabled: false
+      preload:
+        enabled: false
+      pycodestyle:
+        enabled: false
       pydocstyle: {}
       pyls_mypy:
         enabled: false
+        live_mode: false
   "ipython-run":
     focusOnTerminal: true
   "linter-ui-default":
