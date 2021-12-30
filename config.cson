@@ -80,9 +80,31 @@
         live_mode: false
   "ipython-run":
     focusOnTerminal: true
+  "linter-spell":
+    defaultLanguages: [
+      "en_US.utf8"
+    ]
   "linter-ui-default":
     panelHeight: 334
   "python-tools":
     pythonPath: "/home/fm/venv3/bin/"
+  "spell-check":
+    grammars: [
+      "source.asciidoc"
+      "source.gfm"
+      "text.git-commit"
+      "text.plain"
+      "text.plain.null-grammar"
+      "source.rst"
+      "text.restructuredtext"
+      "text.tex.latex"
+    ]
+    locales: [
+      "en-US"
+      "en-GB"
+    ]
   welcome:
     showOnStartup: false
+".bibtex.text":
+  editor:
+    softWrap: true

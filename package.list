@@ -36,6 +36,8 @@ intentions@2.1.1
 ipython-run@0.3.1
 language-latex@1.2.0
 latex-autocomplete@1.1.1
+latex-folding@1.5.0
+latex-tree@0.5.0
 linter@3.4.0
 linter-gcc2@0.8.8
 linter-ui-default@3.4.1
