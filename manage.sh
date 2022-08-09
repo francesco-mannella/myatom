@@ -44,8 +44,7 @@ do
           shift 2;;
       -s | --save)
           SAVE=true
-          shift;
-          break;;
+          shift;;
       -l | --load)
           LOAD=true
           shift;
@@ -69,10 +68,16 @@ echo $MESSAGE
 if [[ $LOAD == true ]]; then
   echo "Loading from remote ..."
   git pull
-  apm list --installed --bare > ~/.atom/curr_package.list
+  apm list --installed --bare | sed -e"s/@.*//"> ~/.atom/curr_package.list
   diff -u ~/.atom/curr_package.list ~/.atom/package.list | grep "^+[^+]" | \
     sed -e"s/^+//; s/@.*//" > ~/.atom/new_package.list
-  apm install --packages-file ~/.atom/new_package.list
+  diff -u ~/.atom/curr_package.list ~/.atom/package.list | grep "^-[^-]" | \
+    sed -e"s/^-//" > ~/.atom/del_package.list
+  [[ -s ~/.atom/del_package.list ]] && for f in $(cat ~/.atom/del_package.list); do 
+        n=$(echo $f| sed -e"s/\@.*//") 
+        apm uninstall $n; 
+    done
+  [[ -s ~/.atom/new_package.list ]] && apm install --packages-file ~/.atom/new_package.list
 fi
 if [[ $SAVE == true ]]; then
   echo "Saving to remote ..."

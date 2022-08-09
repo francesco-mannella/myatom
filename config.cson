@@ -1,66 +1,110 @@
 "*":
-  Hydrogen:
-    startDir: "dirOfFile"
-    wrapOutput: true
-  "atom-ide-terminal":
-    ansiColors:
-      normal:
-        blue: "#4f4fed"
-        red: "#f56060"
-      zBright:
-        brightBlue: "#5d5dee"
-        brightRed: "#fc5f5f"
-    core:
-      workingDirectory: "Active File"
-    style: {}
-  "atom-package-deps":
-    ignored: [
-      "linter"
-    ]
-  "atom-python-run":
-    consoleLog: false
-  autocomplete:
-    includeCompletionsFromAllBuffers: true
-  "autocomplete-clang": {}
+  "atom-beautify":
+    bash: {}
+    general:
+      _analyticsUserId: "0d8609c0-06b0-4e33-a55a-fb773b21ba76"
+      showLoadingView: false
+    python:
+      default_beautifier: "black"
+      sort_imports: true
+  "atom-ide-outline":
+    foldInitially: true
+    initialDisplay: false
+  "atom-ide-ui":
+    use:
+      "atom-ide-datatip": "never"
+      "atom-ide-definitions": "never"
+      "atom-ide-diagnostics-ui": "never"
+      "atom-ide-find-references": "never"
+      "atom-ide-outline-view": "never"
+      "atom-ide-terminal": "never"
+  "atom-latex":
+    latexmk_param: "-synctex=1 -interaction=nonstopmode --enable-write18 -file-line-error -bibtex -gg -pdf"
+  "atom-oss-license":
+    name: "Francesco Mannella"
+  "atom-python-run": {}
   "autocomplete-python":
-    useSnippets: "required"
-  autosave:
-    enabled: true
-  "autosave-plus":
-    enabled: true
+    showDescriptions: false
+    useKite: false
   core:
     disabledPackages: [
-      "linter-ui-default"
       "markdown-preview"
     ]
-    telemetryConsent: "no"
+    openEmptyEditorOnStart: false
+    packagesWithKeymapsDisabled: []
+    restorePreviousWindowsOnStart: "no"
+    telemetryConsent: "limited"
     themes: [
-      "one-dark-ui"
-      "wombat-dark-syntax"
+      "rzx-light-ui"
+      "monokai-2"
     ]
-    useTreeSitterParsers: false
-  "docblock-python":
-    style: "google"
-    types: {}
-    use_defaults: true
-  editor:
-    tabType: "soft"
+  "dli-atom-beautify":
+    general:
+      beautifyEntireFileOnSave: false
+    python:
+      default_beautifier: "black"
+      sort_imports: true
+  editor: {}
   "exception-reporting":
-    userId: "240f309c-fea9-47c5-86d6-29b068d3732e"
-  "linter-pylama":
-    ignoreErrorsAndWarnings: "D203,D212,D213,D404,D100,W0611,D214,D215,D405,D406,D407,D408,D409,D410,D411,D415,D416,D417"
-    usePep257: false
-  "linter-python":
-    withPep8: true
+    userId: "a438f520-5744-4f6f-8d3c-09e82a4b7afd"
+  "gcc-make-run": {}
+  "gpp-compiler":
+    cppCompilerOptions: "-std=c++11"
+  "ide-python":
+    pylsPlugins:
+      autopep8: {}
+      flake8:
+        enabled: true
+      jedi_completion:
+        include_params: false
+      jedi_definition:
+        enabled: false
+      jedi_hover:
+        enabled: false
+      jedi_references:
+        enabled: false
+      jedi_signature_help:
+        enabled: false
+      jedi_symbols:
+        all_scopes: false
+        enabled: false
+      mccabe:
+        enabled: false
+      preload:
+        enabled: false
+      pycodestyle:
+        enabled: false
+      pydocstyle: {}
+      pyls_mypy:
+        enabled: false
+        live_mode: false
+  "ipython-run":
+    focusOnTerminal: true
+  "linter-spell":
+    defaultLanguages: [
+      "en_US.utf8"
+    ]
   "linter-ui-default":
-    panelHeight: 350
-  "python-autopep8":
-    formatOnSave: true
-  "symbols-navigator":
-    clickType: "Single Click"
-    collapsedByDefault: true
-    position: "Right"
-    showOnStatusBar: true
-    sortBy: "Source Row"
+    panelHeight: 334
+  "python-tools":
+    pythonPath: "/home/fm/venv3/bin/"
+  "spell-check":
+    grammars: [
+      "source.asciidoc"
+      "source.gfm"
+      "text.git-commit"
+      "text.plain"
+      "text.plain.null-grammar"
+      "source.rst"
+      "text.restructuredtext"
+      "text.tex.latex"
+    ]
+    locales: [
+      "en-US"
+      "en-GB"
+    ]
   welcome:
     showOnStartup: false
+".bibtex.text":
+  editor:
+    softWrap: true
