@@ -71,8 +71,7 @@ if [[ $LOAD == true ]]; then
   git pull
   apm list --installed --bare > ~/.atom/curr_package.list
   diff -u ~/.atom/curr_package.list ~/.atom/package.list | grep "^+[^+]" | \
-    sed -e"s/^+//" > ~/.atom/new_package.list
-  sed -ie"s/@.*//"  ~/.atom/new_package.list
+    sed -e"s/^+//; s/@.*//" > ~/.atom/new_package.list
   apm install --packages-file ~/.atom/new_package.list
 fi
 if [[ $SAVE == true ]]; then
