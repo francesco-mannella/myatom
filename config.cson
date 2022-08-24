@@ -105,6 +105,10 @@
     ]
   welcome:
     showOnStartup: false
+  "zotero-citations":
+    citationStyle: "LaTeX"
+    latexCommand: "citep"
+    minimize: true
 ".bibtex.text":
   editor:
     softWrap: true
